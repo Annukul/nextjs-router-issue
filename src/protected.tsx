@@ -3,7 +3,7 @@ import React, { ReactNode, useEffect } from "react"
 import { useRouter } from "next/navigation"
 
 export const Protected = ({ children }: { children: ReactNode }) => {
-  const isLoggedIn = false
+  const isLoggedIn = true
   const router = useRouter()
   
   useEffect(() => {
