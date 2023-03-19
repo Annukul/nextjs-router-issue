@@ -19,7 +19,7 @@ export const Protected = ({ children }: { children: ReactNode }) => {
         router.push("/")
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isLoggedIn])
+  }, [])
 
   return <React.Fragment>{isLoggedIn ? children : null}</React.Fragment>
 }
